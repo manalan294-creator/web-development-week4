@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpendWise Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Sidebar navigation">
+        <div class="brand">
+          <div class="brand-mark">S</div>
+          <div>
+            <p class="brand-label">SpendWise</p>
+            <p class="brand-subtitle">Finance Hub</p>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <button class="nav-item active" type="button">
+            <span class="nav-icon">◫</span>
+            Overview
+          </button>
+          <button class="nav-item" type="button">
+            <span class="nav-icon">↗</span>
+            Transactions
+          </button>
+          <button class="nav-item" type="button">
+            <span class="nav-icon">▣</span>
+            Budgets
+          </button>
+          <button class="nav-item" type="button">
+            <span class="nav-icon">◎</span>
+            Savings
+          </button>
+          <button class="nav-item" type="button">
+            <span class="nav-icon">◌</span>
+            Reports
+          </button>
+        </nav>
+
+        <div class="sidebar-summary">
+          <p class="summary-label">Monthly budget</p>
+          <div class="summary-amount">$8,450</div>
+          <div class="progress-bar" aria-label="Progress bar">
+            <span></span>
+          </div>
+          <div class="summary-meta">
+            <span>$5,370 spent</span>
+            <span>64%</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="heading-group">
+            <p class="eyebrow">Good morning</p>
+            <h1>Finance Overview</h1>
+          </div>
+
+          <div class="header-actions">
+            <div class="search-box" aria-label="Search">
+              <span class="search-icon">⌕</span>
+              <span>Search</span>
+            </div>
+            <button class="primary-btn" type="button">Add expense</button>
+          </div>
+        </header>
+
+        <section class="stat-grid" aria-label="Financial summary cards">
+          <article class="stat-card accent">
+            <div class="stat-header">
+              <span>Total Balance</span>
+              <span class="trend positive">+8.4%</span>
+            </div>
+            <h2>$24,680</h2>
+            <p>Compared to last month</p>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-header">
+              <span>Income</span>
+              <span class="trend positive">+5.1%</span>
+            </div>
+            <h2>$8,920</h2>
+            <p>Across all accounts</p>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-header">
+              <span>Expenses</span>
+              <span class="trend negative">-2.3%</span>
+            </div>
+            <h2>$5,370</h2>
+            <p>Monthly spending</p>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-header">
+              <span>Saved</span>
+              <span class="trend positive">+12.7%</span>
+            </div>
+            <h2>$1,850</h2>
+            <p>Target progress</p>
+          </article>
+        </section>
+
+        <section class="category-panel" aria-label="Spending categories">
+          <div class="section-header">
+            <h2>Spending categories</h2>
+            <a href="#" aria-label="View report">View report</a>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card" tabindex="0" aria-label="Food and dining card">
+              <div class="card-top">
+                <div class="icon food">F</div>
+                <span class="trend positive">+12%</span>
+              </div>
+              <div class="card-body">
+                <h3>Food & Dining</h3>
+                <p class="amount">$640</p>
+                <p class="meta">Spent this month</p>
+              </div>
+              <div class="card-footer">
+                <span>Budget $900</span>
+                <span>71% used</span>
+              </div>
+            </article>
+
+            <article class="category-card" tabindex="0" aria-label="Transport card">
+              <div class="card-top">
+                <div class="icon transport">T</div>
+                <span class="trend positive">+4%</span>
+              </div>
+              <div class="card-body">
+                <h3>Transport</h3>
+                <p class="amount">$420</p>
+                <p class="meta">Fuel and commute</p>
+              </div>
+              <div class="card-footer">
+                <span>Budget $550</span>
+                <span>76% used</span>
+              </div>
+            </article>
+
+            <article class="category-card" tabindex="0" aria-label="Rent card">
+              <div class="card-top">
+                <div class="icon rent">R</div>
+                <span class="trend neutral">Stable</span>
+              </div>
+              <div class="card-body">
+                <h3>Rent</h3>
+                <p class="amount">$1,800</p>
+                <p class="meta">Fixed monthly cost</p>
+              </div>
+              <div class="card-footer">
+                <span>Budget $1,800</span>
+                <span>100% used</span>
+              </div>
+            </article>
+
+            <article class="category-card" tabindex="0" aria-label="Entertainment card">
+              <div class="card-top">
+                <div class="icon entertainment">E</div>
+                <span class="trend negative">-8%</span>
+              </div>
+              <div class="card-body">
+                <h3>Entertainment</h3>
+                <p class="amount">$340</p>
+                <p class="meta">Streaming and events</p>
+              </div>
+              <div class="card-footer">
+                <span>Budget $600</span>
+                <span>57% used</span>
+              </div>
+            </article>
+
+            <article class="category-card" tabindex="0" aria-label="Savings card">
+              <div class="card-top">
+                <div class="icon savings">S</div>
+                <span class="trend positive">+9%</span>
+              </div>
+              <div class="card-body">
+                <h3>Savings</h3>
+                <p class="amount">$950</p>
+                <p class="meta">Invested this month</p>
+              </div>
+              <div class="card-footer">
+                <span>Goal $1,200</span>
+                <span>79% reached</span>
+              </div>
+            </article>
+
+            <article class="category-card" tabindex="0" aria-label="Utilities card">
+              <div class="card-top">
+                <div class="icon utilities">U</div>
+                <span class="trend positive">+3%</span>
+              </div>
+              <div class="card-body">
+                <h3>Utilities</h3>
+                <p class="amount">$260</p>
+                <p class="meta">Internet and home</p>
+              </div>
+              <div class="card-footer">
+                <span>Budget $420</span>
+                <span>62% used</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
